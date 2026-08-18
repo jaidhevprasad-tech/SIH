@@ -1,6 +1,14 @@
 # SIH — Geospatial Platform for Disaster Information and Decision Support
 
-This repository contains the foundation for a disaster-information and decision-support platform focused on **Assam, India**. The prepared dataset package is available as [`assam_dataset_package.zip`](assam_dataset_package.zip).
+This repository contains the foundation for a disaster-information and decision-support platform focused on **India**, with an Assam deployment package and an India-only satellite flood-segmentation package for the GeoResQ prototype.
+
+## India-only satellite ML package
+
+The primary satellite training package is [`data/india_flood_segmentation/`](data/india_flood_segmentation/). It contains 535 real Indian Sentinel-1 SAR chips from the Sen1Floods11 India event: 467 weakly labeled training chips and 68 hand-labeled validation chips. The package includes the downloader, SHA-256 manifest, validator, sample visualization, dataset documentation, and a runnable PyTorch U-Net baseline. Read [`data/india_flood_segmentation/README.md`](data/india_flood_segmentation/README.md) before training.
+
+The raw GeoTIFFs are intentionally distributed as a GitHub release asset and can also be reproduced from the public source bucket with the included downloader. The model output is a flood-water hazard mask; population, hospitals, schools, buildings, roads, routes, shelters, and recommended actions remain GIS overlay and decision-support stages rather than labels learned from satellite chips alone.
+
+The Assam package remains available for the Assam-specific data catalog and weather feature workflow. It should be treated as an operational data-integration package, while the India satellite package is the supervised computer-vision training core.
 
 ## What the Assam dataset package contains
 

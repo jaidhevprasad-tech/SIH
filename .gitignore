@@ -1,0 +1,9 @@
+# Large India satellite binaries are published as GitHub release assets.
+data/india_flood_segmentation/raw/
+
+# Local model outputs and smoke-test artifacts.
+runs/
+*.pt
+*.pth
+__pycache__/
+*.pyc

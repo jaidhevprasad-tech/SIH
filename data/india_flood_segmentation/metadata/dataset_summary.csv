@@ -1,0 +1,14 @@
+field,value
+country,India
+region,northeastern India event extent
+source_dataset,Sen1Floods11 v1.1 India event
+sensor,Sentinel-1 GRD SAR
+bands,VV and VH
+resolution_m,10
+chip_size_pixels,512x512
+train_chips,467
+validation_chips,68
+train_label_type,weak Otsu-derived water labels
+validation_label_type,hand-labeled flood/water masks
+acquisition_date,2016-08-12
+bbox_wgs84,"92.15065174389201,24.847136509695623,94.16335178806435,28.284759459013305"

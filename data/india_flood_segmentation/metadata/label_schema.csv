@@ -1,0 +1,4 @@
+value,name,meaning,training_use
+-1,NoData,Invalid or unavailable pixel,Ignore in loss and metrics
+0,NotWater,Not water,Negative class
+1,Water,Water/flood-water class,Positive class
