@@ -47,7 +47,7 @@ india_flood_segmentation/
 
 ## Download or reproduce the raw package
 
-The raw GeoTIFFs are large and should be obtained through the downloader or the GitHub release asset rather than committed into ordinary Git history. From the repository root:
+The raw GeoTIFFs are large and should be obtained through the [GitHub release asset](https://github.com/jaidhevprasad-tech/SIH/releases/tag/v1.0-india-flood-dataset) or the downloader rather than committed into ordinary Git history. From the repository root:
 
 ```bash
 python3 -m pip install -r data/india_flood_segmentation/requirements.txt

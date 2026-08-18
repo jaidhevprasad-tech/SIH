@@ -6,7 +6,7 @@ This repository contains the foundation for a disaster-information and decision-
 
 The primary satellite training package is [`data/india_flood_segmentation/`](data/india_flood_segmentation/). It contains 535 real Indian Sentinel-1 SAR chips from the Sen1Floods11 India event: 467 weakly labeled training chips and 68 hand-labeled validation chips. The package includes the downloader, SHA-256 manifest, validator, sample visualization, dataset documentation, and a runnable PyTorch U-Net baseline. Read [`data/india_flood_segmentation/README.md`](data/india_flood_segmentation/README.md) before training.
 
-The raw GeoTIFFs are intentionally distributed as a GitHub release asset and can also be reproduced from the public source bucket with the included downloader. The model output is a flood-water hazard mask; population, hospitals, schools, buildings, roads, routes, shelters, and recommended actions remain GIS overlay and decision-support stages rather than labels learned from satellite chips alone.
+The raw GeoTIFFs are intentionally distributed as a [GitHub release asset](https://github.com/jaidhevprasad-tech/SIH/releases/tag/v1.0-india-flood-dataset) and can also be reproduced from the public source bucket with the included downloader. The model output is a flood-water hazard mask; population, hospitals, schools, buildings, roads, routes, shelters, and recommended actions remain GIS overlay and decision-support stages rather than labels learned from satellite chips alone.
 
 The Assam package remains available for the Assam-specific data catalog and weather feature workflow. It should be treated as an operational data-integration package, while the India satellite package is the supervised computer-vision training core.
 
